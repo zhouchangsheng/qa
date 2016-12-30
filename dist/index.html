@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=0">
+    <meta http-equiv = "pragma" content = "no-cache">
+    <meta http-equiv = "expires" content = "0">
+    <link rel = "stylesheet" type = "text/css" href = "css/jquery-weui.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/topic.css" />
+    <style>
+        .weui-photo-browser-modal {
+            z-index:3
+        }
+        .weui-photo-browser-modal .photo-container img {
+            width: 100%;
+            margin-top: -30px;
+        }
+
+        .am-image-picker .am-image-picker-list {
+            padding-bottom: 10px!important;
+            margin-bottom: 0!important;
+        }
+
+        .am-modal{
+            min-width: 14.4rem!important;
+            max-width:16.4rem!important;
+            width:auto!important;
+        }
+
+        .am-tab-bar-bar .am-tab-bar-tab-title {
+            font-size: 24px !important;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">loading</div>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/jquery-weui.js"></script>
+<script src="lib/swiper.js"></script>
+
+<script>
+    $(function(){
+        var imageColumn3WidthHeight = function () {
+            var column3Width = $(".topicImageColumn3").width();
+            if(column3Width){
+                $(".topicImageColumn3").css("height", column3Width + "px");
+            }
+        };
+
+        var imageColumn2WidthHeight = function() {
+            var column2Width = $(".topicImageColumn2").width();
+            if(column2Width){
+                $(".topicImageColumn2").css("height", column2Width*1.2 + "px");
+            }
+        };
+
+        var imageColumn1WidthHeight = function() {
+            var column1Width = $(".topicImageColumn1").width();
+            if(column1Width){
+                $(".topicImageColumn1").css("height", column1Width*1.2 + "px");
+            }
+        };
+
+        $(window).resize(function () {
+            imageColumn3WidthHeight();
+            imageColumn2WidthHeight();
+            imageColumn1WidthHeight();
+        });
+
+    });
+</script>
+<script src="bundle.js"></script>
+</body>
+</html>

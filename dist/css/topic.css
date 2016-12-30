@@ -1,0 +1,123 @@
+/*
+ * topic 缩列文本
+ **/
+.topicHeader{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.topicHeader .topicTitle{
+    font-size: 1.35rem;
+}
+
+.topicHeader .topicUserNickname{
+    font-size: 1.0rem;
+    padding-top: 0.5rem;
+}
+
+/*
+ * topic 缩列文本
+ **/
+.topicText{
+    position: relative;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.topicTextAbbr{
+    max-height: 4.5rem;
+    overflow: hidden;
+}
+
+.topicDetailTrigger{
+    padding: 20px 0;
+    font-size: 1.2rem;
+    color: blue;
+}
+
+/*.topicTextAbbr::after{
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left:5px;
+    !*background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);*!
+    //background-color:white;
+}*/
+
+/*
+ * 图片
+ **/
+.topicContainer{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.topicImageList{
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.topicImageList .topicImage{
+    border:1px solid white;
+    background: no-repeat center center;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.topicImageList .topicImageColumn1{
+    width: 65%;
+    background-color: yellow;
+}
+
+.topicImageList .topicImageColumn2{
+    width: 50%;
+    background-color: red;
+}
+
+.topicImageList .topicImageColumn3{
+    width: 33.3%;
+    background-color: blue;
+    height: 60px;
+}
+
+/*
+ * topicFooter
+ */
+.topicFooter .am-flexbox-item .anticon{
+    font-size:30px;
+    font-weight:900
+}
+
+.topicFooter .am-flexbox-item .topicComments{
+    font-size:28px;
+    padding-left:10px;
+}
+
+/*
+ * topicPopoverItem
+ **/
+.topicPopoverItem{
+    height: 60px!important;
+}
+
+.topicPopoverItem .am-popover-item-icon{
+    margin-right: 10px!important;
+    font-size: 30px!important;
+}
+
+.topicPopoverItem .am-popover-item-content{
+    font-size: 22px;
+}
